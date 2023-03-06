@@ -88,6 +88,9 @@ main() {
     "x86_64")
       ARCH="amd64"
     ;;
+    "arm64")
+      ARCH="arm64"
+    ;;
     i*)
       ARCH="386"
     ;;
@@ -100,6 +103,9 @@ main() {
   case "$OS" in
     "Linux")
       OS="linux"
+    ;;
+    "Darwin")
+      OS="darwin"
     ;;
     *)
       die "$OS is unsupported"

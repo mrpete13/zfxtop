@@ -12,9 +12,11 @@ PDIR="${RELEASE}/pkg"
 ARCHES='
   386
   amd64
+  arm64
 '
 OSES='
   linux
+  darwin
 '
 
 clear() {
@@ -40,7 +42,7 @@ compile() {
       msg "'${BDIR}/${NAME}_${VERSION}_${os}_${arch}' builded"
     done
   done
-  compl 'all executables builded'
+  compl 'all executables built'
 }
 
 package() {
