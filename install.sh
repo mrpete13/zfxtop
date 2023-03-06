@@ -91,6 +91,9 @@ main() {
     "arm64")
       ARCH="arm64"
     ;;
+    "aarch64")
+     ARCH="arm64"
+    ;;
     i*)
       ARCH="386"
     ;;

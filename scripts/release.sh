@@ -39,7 +39,7 @@ compile() {
       [ $? -ne 0 ] && {
         die 'exeption during compilation'
       }
-      msg "'${BDIR}/${NAME}_${VERSION}_${os}_${arch}' builded"
+      msg "'${BDIR}/${NAME}_${VERSION}_${os}_${arch}' built"
     done
   done
   compl 'all executables built'
